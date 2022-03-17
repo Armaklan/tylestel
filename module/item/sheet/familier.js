@@ -4,8 +4,8 @@ export default class FamilierSheet extends ItemSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["sheet", "item", "tylestel", "familier"],
       template: "systems/tylestel/templates/sheet/familier.html",
-      width: 500,
-      height: 400,
+      width: 600,
+      height: 600,
     });
   }
 

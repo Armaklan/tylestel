@@ -32,6 +32,18 @@
             />
         </div>
 
-        {{editor content=data.data.description target="data.description" button=true owner=owner editable=editable}}
+        <div class="form-group form-editor">
+            <label>
+                Aide à l'attaque
+            </label>
+            {{editor content=data.data.description target="data.description" button=true owner=owner editable=editable}}
+        </div>
+
+        <div class="form-group form-editor">
+            <label>
+                Actions
+            </label>
+            {{editor content=data.data.actions target="data.actions" button=true owner=owner editable=editable}}
+        </div>
     </section>
 </form>

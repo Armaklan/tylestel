@@ -179,6 +179,7 @@
     "familier": {
       "templates": ["base"],
       "type": "",
+      "actions": "",
       "soin": false,
       "maltraitance": 0,
       "points": {
