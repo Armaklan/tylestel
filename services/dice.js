@@ -238,7 +238,7 @@ async function openDialogMagie(title, actor) {
           resolve();
         },
       },
-      { height: 600, width: 800 }
+      { height: 640, width: 800 }
     ).render(true);
   });
 }

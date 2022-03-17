@@ -70,7 +70,7 @@ export class Macro {
         {}
       );
       launchDice(actor.data._id, attribut, metier);
-    }, { height: 600, width: 800});
+    }, { height: 640, width: 800});
   };
 
   static getSpeakersActor = function () {
