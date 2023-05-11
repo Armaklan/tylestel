@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Halant&display=swap');
-@import 'actor';
-@import 'sheet';
-@import 'manoeuvre';
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Halant&display=swap");
+@import "actor";
+@import "sheet";
+@import "chat.scss";
+@import "manoeuvre";
 
 .window-content {
-    .dialog-buttons {
-        flex: 0;
-    }
+  .dialog-buttons {
+    flex: 0;
+  }
 }

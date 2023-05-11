@@ -64,7 +64,6 @@ export class Macro {
         {
           content: descriptif,
           speaker: ChatMessage.getSpeaker({ actor }),
-          flavor: name,
         },
         {}
       );

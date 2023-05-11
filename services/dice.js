@@ -110,12 +110,22 @@ export async function launchDice(actorId, attribut, metier) {
   const rollFormula = `1d6x+1d6+${attributValue}+${metierValue}-${malusEtat}`;
   const roll = new Roll(rollFormula, actorData);
   const rollEvaluation = await roll.evaluate({ async: true });
+  const flavor = await _buildChatMessage(attribut, metier, actor);
   return rollEvaluation.toMessage({
     speaker: ChatMessage.getSpeaker({ actor }),
-    flavor: `${attribut} + ${metier}`,
+    flavor,
   });
 }
 
+export function _buildChatMessage(attribut, metier, actor) {
+  const rollMessageTpl = 'systems/tylestel/templates/rolls/standard-roll.hbs'
+  const description = `${attribut} + ${metier}`;
+
+  return renderTemplate(rollMessageTpl, {
+    description,
+    actor
+  });
+}
 
 export async function determinerAttribut(manoeuvres) {
   const attributsPossibleParManoeuvre = manoeuvres.map((m) => m.system.attribut === 'variable' ? attributs : m.system.attribut.split("/"));
@@ -225,8 +235,7 @@ async function openDialogMagie(title, actor) {
               ChatMessage.create(
                 {
                   content: descriptif,
-                  speaker: ChatMessage.getSpeaker({ actor }),
-                  flavor: name,
+                  speaker: ChatMessage.getSpeaker({ actor })
                 },
                 {}
               );

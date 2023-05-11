@@ -348,6 +348,21 @@ div.destinee .destinee-container input {
   gap: 1em;
 }
 
+.flavor-text {
+  display: flex;
+}
+.flavor-text h2 img {
+  max-width: 80px;
+}
+.flavor-text h3 {
+  text-transform: capitalize;
+  flex: 1 1 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tylestel.sheet.manoeuvre .item-subtitle, .tylestel.sheet.item .item-subtitle {
   text-transform: capitalize;
   color: #5D5D5D;

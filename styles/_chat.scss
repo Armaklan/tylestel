@@ -1,0 +1,16 @@
+.flavor-text {
+  display: flex;
+
+  h2 img {
+    max-width: 80px;
+  }
+
+  h3 {
+    text-transform: capitalize;
+    flex: 1 1 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
