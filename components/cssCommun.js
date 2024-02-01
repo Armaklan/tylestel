@@ -1,4 +1,4 @@
-import { css } from "https://unpkg.com/lit?module";
+import { css } from "https://unpkg.com/lit@2.1.3?module";
 
 export const titreCss = css`
   h1,

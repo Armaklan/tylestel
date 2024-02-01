@@ -2,7 +2,7 @@ import {
   LitElement,
   css,
   html,
-} from "https://unpkg.com/lit?module";
+} from "https://unpkg.com/lit@2.1.3?module";
 import { unsafeHTML } from "https://unpkg.com/lit-html@2.1.3/directives/unsafe-html.js?module"
 
 export class Manoeuvre extends LitElement {

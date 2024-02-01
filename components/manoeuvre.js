@@ -1,4 +1,4 @@
-import { LitElement, css, html } from "https://unpkg.com/lit?module";
+import { LitElement, css, html } from "https://unpkg.com/lit@2.1.3?module";
 import { executeManoeuvres } from "../services/dice.js";
 import { buttonCss, icons, titreCss } from "./cssCommun.js";
 

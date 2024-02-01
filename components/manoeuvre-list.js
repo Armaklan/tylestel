@@ -1,4 +1,4 @@
-import { LitElement, css, html } from "https://unpkg.com/lit?module";
+import { LitElement, css, html } from "https://unpkg.com/lit@2.1.3?module";
 import { htmlObjectConverter } from "./converter.js";
 import { buttonCss, titreCss } from "./cssCommun.js";
 

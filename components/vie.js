@@ -1,4 +1,4 @@
-import { LitElement, css, html, unsafeCSS } from "https://unpkg.com/lit?module";
+import { LitElement, css, html, unsafeCSS } from "https://unpkg.com/lit@2.1.3?module";
 
 const boxSize = "1.5rem";
 
